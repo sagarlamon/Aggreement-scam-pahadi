@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>कृपा आप एक गलती ना करें🙏🏻</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden;
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+
+        .header {
+            text-align: center;
+            padding: 10px;
+            background-color: #ffffff;
+            border-bottom: 1px solid #ddd;
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+
+        .pdf-viewer {
+            flex-grow: 1;
+            width: 100%;
+            border: none;
+        }
+
+        .download-btn-container {
+            text-align: center;
+            padding: 15px;
+            background-color: #ffffff;
+            border-top: 1px solid #ddd;
+        }
+
+        .download-btn {
+            background-color: #007BFF;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 5px;
+            border: none;
+        }
+
+        /* Responsive adjustments for smaller screens */
+        @media (max-width: 600px) {
+            .header {
+                font-size: 1em;
+                padding: 8px;
+            }
+            .download-btn {
+                padding: 8px 16px;
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="header">
+        कृपा आप एक गलती ना करें🙏🏻
+    </div>
+
+    <iframe class="pdf-viewer" src="agreement.pdf"></iframe>
+
+    <div class="download-btn-container">
+        <a href="agreement.pdf" download="agreement.pdf" class="download-btn">Download PDF</a>
+    </div>
+</div>
+
+</body>
+</html>
